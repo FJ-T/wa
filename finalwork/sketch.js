@@ -66,7 +66,7 @@ function windowResized(){
 
 function moveCat() {
   let speed = 6;
-  if (keyIsDown(SHIFT)) {
+  if (keyIsDown(' ')) {
     speed = 10;
   }
   if (keyIsDown(LEFT_ARROW)) {
