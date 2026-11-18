@@ -47,8 +47,13 @@ function draw(){
   // 補足：filter 関数を使うともっと簡単に書ける
   // balls = balls.filter(insideCanvas);
 
-  if(frameCount % 20 === 0) { // 20フレームごとに新しい的を追加する
-    // BLANK[1] 新しい的オブジェクトを作成して targets 配列に追加しよう
+  if(frameCount % 20 === 0) { 
+    const t = {
+      x: width / 2,
+      y: height / 2,
+      size: 10,
+      vx: ()
+    }
   }
 
   // ボールに当たった or 大きくなりすぎた的を配列から削除する
