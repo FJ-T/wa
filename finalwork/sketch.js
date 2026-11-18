@@ -70,7 +70,7 @@ function moveCat() {
   if (keyIsDown(RIGHT_ARROW)) {
     catX += 6;
   }
-  if (keyIsDown(' ')) {
+  if (keyIsDown(SHIFT)) {
     catX += 10;
   }
   catX = constrain(catX, 0, width - catSize);
