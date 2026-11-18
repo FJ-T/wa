@@ -63,15 +63,16 @@ function windowResized(){
   catX = constrain(catX, 0, width - catSize);
 }
 
+let speed = 6;
 function moveCat() {
-  if (keyIsDown(LEFT_ARROW)) {
-    catX -= 6;
-  }
-  if (keyIsDown(RIGHT_ARROW)) {
-    catX += 6;
-  }
   if (keyIsDown(SHIFT)) {
     catX += 10;
+  }
+  if (keyIsDown(LEFT_ARROW)) {
+    catX -= speed;
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    catX += speed;
   }
   catX = constrain(catX, 0, width - catSize);
 }

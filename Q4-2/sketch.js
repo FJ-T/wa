@@ -18,6 +18,15 @@ function setup(){
   const dx = width / scores.length;
   let px, py; // 線を引くために一つ前の点を覚えておく変数
   for(let i = 0; i < scores.length; i++){
-    // BLANK[1]
+  let cx = i * dx + (dx / 2);
+  let cy = height - (scores[i] * 4);
+
+  if (i > 0){
+    line(px, py, cx, cy)
+  }
+  circle(cx, cy, 10);
+
+  px = cx;
+  py = cy;
   }
 }
