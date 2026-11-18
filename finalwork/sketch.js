@@ -63,8 +63,9 @@ function windowResized(){
   catX = constrain(catX, 0, width - catSize);
 }
 
-let speed = 6;
+
 function moveCat() {
+  let speed = 6;
   if (keyIsDown(SHIFT)) {
     speed = 10;
   }
